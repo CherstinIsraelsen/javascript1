@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample Javascript Page</title>
+
+  <script>
+
+  </script>
+  
+</head>
+<body>
+
+<h3>This is a sample JavaScript and HTML document</h3>
+<p>First number: <input id = "fn">
+  Second number: <input id = "sn">
+  <br>
+<button onclick="add()"> Add the Numbers </button>
+  
+</p>
+  
+<p>
+Your Answer Is: <span id=ans> ________________ </span></p>
+  
+</body>
+</html>
