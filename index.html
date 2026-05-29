@@ -11,15 +11,24 @@
 <body>
 
 <h3>This is a sample JavaScript and HTML document</h3>
-<p>First number: <input id = "fn">
-  Second number: <input id = "sn">
+<p>What is your name?<input id = "firstname">
   <br>
-<button onclick="add()"> Add the Numbers </button>
+<button onclick="fname()"> Enter </button>
   
 </p>
   
 <p>
-Your Answer Is: <span id=ans> ________________ </span></p>
+Hi <span id=ans> ________________ </span></p>
+
+  <script>
+function fname() {
+let a = document.getElementById("firstname").value;
+window.alert(a);
+document.getElementById("ans").innerHTML = a;
+
+}
+    
+  </script>
   
 </body>
 </html>
