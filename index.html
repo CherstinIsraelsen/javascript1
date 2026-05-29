@@ -11,10 +11,18 @@
 <body>
 
 <h3>This is a sample JavaScript and HTML document</h3>
+<p>What is your name?<input id = "firstname">
+  <br>
+<button onclick="fname()"> Enter </button>
+  
+</p>
 
   <script>
-window.alert("hi")
-window.alert("Cherstin")
+function fname() {
+let a = document.getElementById("firstname").value;
+window.alert(a);
+
+}
     
   </script>
   
