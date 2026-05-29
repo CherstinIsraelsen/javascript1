@@ -20,6 +20,30 @@ let c = Number(a) - Number(b);
 document.getElementById("ans").innerHTML = c;
 }
 
+function mul()
+{
+let a=document.getElementById("fn").value;
+let b=document.getElementById("sn").value;
+let c = Number(a) * Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
+function div()
+{
+let a=document.getElementById("fn").value;
+let b=document.getElementById("sn").value;
+let c = Number(a) / Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
+function rem()
+{
+let a=document.getElementById("fn").value;
+let b=document.getElementById("sn").value;
+let c = Number(a) % Number(b);
+document.getElementById("ans").innerHTML = c;
+}
+
   </script>
   
 </head>
@@ -31,6 +55,9 @@ document.getElementById("ans").innerHTML = c;
   <br>
 <button onclick="add()"> Add </button>
 <button onclick="sub()"> Subtract </button>
+<button onclick="mul()"> Multiply </button>
+<button onclick="div()"> Divide </button>
+<button onclick="rem()"> Remainder </button>
   
 </p>
   
