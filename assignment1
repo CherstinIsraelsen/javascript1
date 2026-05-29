@@ -4,6 +4,14 @@
 <title>Sample Javascript Page</title>
 
   <script>
+function add()
+{
+let a=document.getElementById("fn").value;
+let b=document.getElementById("sn").value;
+let c = Number(a) + Number(b);
+
+document.getElementById("ans").innerHTML = c;
+}
 
   </script>
   
@@ -11,7 +19,7 @@
 <body>
 
 <h3>This is a sample JavaScript and HTML document</h3>
-<p>First number: <input id = "fn">
+<p>First number: <input id = "fn"> <br>
   Second number: <input id = "sn">
   <br>
 <button onclick="add()"> Add the Numbers </button>
