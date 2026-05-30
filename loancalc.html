@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Loan Payment Calculator</title>
+
+  <script>
+
+function calc()
+{
+let PV = document.getElementById("presval").value;
+let r = document.getElementById("apr").value;
+let n = document.getElementById("yrs").value;
+let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
+document.getElementById("ans").innerHTML = P;
+}
+
+  </script>
+  
+</head>
+<body>
+
+<h3>Loan Payment Calculator</h3>
+<p> <input id = "presval"> Present Value (amount you wish to borrow): <br>
+  <input id = "yrs"> Years: <br>
+  <input id = "apr"> % (annual percentage rate): 
+  <br>
+<button onclick="calc()"> Calculate the Monthly Payment </button>
+  
+</p>
+  
+<p>
+Your Answer Is: <span id=ans> ________________ </span></p>
+  
+</body>
+</html>
