@@ -11,7 +11,7 @@ let PV = document.getElementById("presval").value;
 let r = document.getElementById("apr").value;
 let n = document.getElementById("yrs").value;
 let P = ((r/100/12) * PV) / (1-(1+(r/100/12))**-(n*12));
-document.getElementById("ans").innerHTML = "If you take a loan for $" + PV + " over the span of " + n + " years and at an interest rate of " + r + "%, your payment will be $"P.toFixed(2)";
+document.getElementById("ans").innerHTML = "If you take a loan for $" + PV + " over the span of " + n + " years and at an interest rate of " + r + "%, your monthly payment will be: $" + P.toFixed(2)";
 }
 
   </script>
